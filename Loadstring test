@@ -1,0 +1,1233 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local CycleGui = Instance.new("ScreenGui")
+local CycleFrame = Instance.new("Frame")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local Main = Instance.new("TextButton")
+local Fe = Instance.new("TextButton")
+local Misc = Instance.new("TextButton")
+local Visuals = Instance.new("TextButton")
+local Credits = Instance.new("TextButton")
+local BoomBox = Instance.new("TextButton")
+local MiscFrame = Instance.new("Frame")
+local FovChanger = Instance.new("TextButton")
+local Fov120 = Instance.new("TextButton")
+local Fov90 = Instance.new("TextButton")
+local InfJump = Instance.new("TextButton")
+local FakeMacro = Instance.new("TextButton")
+local VisualsFrame = Instance.new("Frame")
+local Esp = Instance.new("TextButton")
+local DarkChat = Instance.new("TextButton")
+local BoomBoxFrame = Instance.new("Frame")
+local Main_2 = Instance.new("TextButton")
+local CreditsFrame = Instance.new("Frame")
+local Main_3 = Instance.new("TextButton")
+local FeFrame = Instance.new("Frame")
+local FeHeadless = Instance.new("TextButton")
+local FeKorblox = Instance.new("TextButton")
+local FeAnimationCombos = Instance.new("TextButton")
+local Aimlock = Instance.new("TextButton")
+local MainFrame = Instance.new("Frame")
+local Aimlock_2 = Instance.new("TextButton")
+local SilentAimTranparant = Instance.new("TextButton")
+local SilentAimNormal = Instance.new("TextButton")
+local KeyFrame = Instance.new("Frame")
+local EnterTheKey = Instance.new("TextLabel")
+local Password = Instance.new("TextBox")
+local Sumbit = Instance.new("TextButton")
+local UIGradient = Instance.new("UIGradient")
+
+--Properties:
+
+CycleGui.Name = "CycleGui"
+CycleGui.Parent = game.CoreGui
+
+CycleFrame.Name = "CycleFrame"
+CycleFrame.Parent = CycleGui
+CycleFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+CycleFrame.BorderColor3 = Color3.fromRGB(255, 255, 255)
+CycleFrame.BorderSizePixel = 2
+CycleFrame.Position = UDim2.new(0.30859372, 0, 0.211201862, 0)
+CycleFrame.Size = UDim2.new(0, 502, 0, 310)
+CycleFrame.Visible = false
+
+ScrollingFrame.Parent = CycleFrame
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+ScrollingFrame.BorderColor3 = Color3.fromRGB(255, 255, 255)
+ScrollingFrame.BorderSizePixel = 2
+ScrollingFrame.Size = UDim2.new(0, 163, 0, 310)
+
+Main.Name = "Main"
+Main.Parent = CycleFrame
+Main.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Main.BorderColor3 = Color3.fromRGB(255, 251, 249)
+Main.BorderSizePixel = 2
+Main.Position = UDim2.new(0.029880479, 0, 0.0290322602, 0)
+Main.Size = UDim2.new(0, 119, 0, 40)
+Main.Font = Enum.Font.SourceSans
+Main.Text = "Main"
+Main.TextColor3 = Color3.fromRGB(245, 245, 245)
+Main.TextScaled = true
+Main.TextSize = 14.000
+Main.TextWrapped = true
+
+Fe.Name = "Fe"
+Fe.Parent = CycleFrame
+Fe.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Fe.BorderColor3 = Color3.fromRGB(255, 251, 249)
+Fe.BorderSizePixel = 2
+Fe.Position = UDim2.new(0.029880479, 0, 0.190322578, 0)
+Fe.Size = UDim2.new(0, 119, 0, 40)
+Fe.Font = Enum.Font.SourceSans
+Fe.Text = "Fe"
+Fe.TextColor3 = Color3.fromRGB(245, 245, 245)
+Fe.TextScaled = true
+Fe.TextSize = 14.000
+Fe.TextWrapped = true
+
+Misc.Name = "Misc"
+Misc.Parent = CycleFrame
+Misc.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Misc.BorderColor3 = Color3.fromRGB(255, 251, 249)
+Misc.BorderSizePixel = 2
+Misc.Position = UDim2.new(0.029880479, 0, 0.351612896, 0)
+Misc.Size = UDim2.new(0, 119, 0, 40)
+Misc.Font = Enum.Font.SourceSans
+Misc.Text = "Misc"
+Misc.TextColor3 = Color3.fromRGB(245, 245, 245)
+Misc.TextScaled = true
+Misc.TextSize = 14.000
+Misc.TextWrapped = true
+
+Visuals.Name = "Visuals"
+Visuals.Parent = CycleFrame
+Visuals.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Visuals.BorderColor3 = Color3.fromRGB(255, 251, 249)
+Visuals.BorderSizePixel = 2
+Visuals.Position = UDim2.new(0.029880479, 0, 0.516129017, 0)
+Visuals.Size = UDim2.new(0, 119, 0, 40)
+Visuals.Font = Enum.Font.SourceSans
+Visuals.Text = "Visuals"
+Visuals.TextColor3 = Color3.fromRGB(245, 245, 245)
+Visuals.TextScaled = true
+Visuals.TextSize = 14.000
+Visuals.TextWrapped = true
+
+Credits.Name = "Credits"
+Credits.Parent = CycleFrame
+Credits.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Credits.BorderColor3 = Color3.fromRGB(255, 251, 249)
+Credits.BorderSizePixel = 2
+Credits.Position = UDim2.new(0.029880479, 0, 0.845161259, 0)
+Credits.Size = UDim2.new(0, 119, 0, 40)
+Credits.Font = Enum.Font.SourceSans
+Credits.Text = "Credits"
+Credits.TextColor3 = Color3.fromRGB(245, 245, 245)
+Credits.TextScaled = true
+Credits.TextSize = 14.000
+Credits.TextWrapped = true
+
+BoomBox.Name = "BoomBox"
+BoomBox.Parent = CycleFrame
+BoomBox.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+BoomBox.BorderColor3 = Color3.fromRGB(255, 251, 249)
+BoomBox.BorderSizePixel = 2
+BoomBox.Position = UDim2.new(0.029880479, 0, 0.680645168, 0)
+BoomBox.Size = UDim2.new(0, 119, 0, 40)
+BoomBox.Font = Enum.Font.SourceSans
+BoomBox.Text = "BoomBox"
+BoomBox.TextColor3 = Color3.fromRGB(245, 245, 245)
+BoomBox.TextScaled = true
+BoomBox.TextSize = 14.000
+BoomBox.TextWrapped = true
+
+MiscFrame.Name = "MiscFrame"
+MiscFrame.Parent = CycleFrame
+MiscFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+MiscFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MiscFrame.Position = UDim2.new(0.336653382, 0, 0.0290322583, 0)
+MiscFrame.Size = UDim2.new(0, 326, 0, 293)
+
+FovChanger.Name = "Fov Changer"
+FovChanger.Parent = MiscFrame
+FovChanger.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+FovChanger.BorderColor3 = Color3.fromRGB(255, 251, 249)
+FovChanger.BorderSizePixel = 2
+FovChanger.Position = UDim2.new(0.0284662545, 0, 0.0320000015, 0)
+FovChanger.Size = UDim2.new(0, 307, 0, 40)
+FovChanger.Font = Enum.Font.SourceSans
+FovChanger.Text = "Fov Changer"
+FovChanger.TextColor3 = Color3.fromRGB(245, 245, 245)
+FovChanger.TextScaled = true
+FovChanger.TextSize = 14.000
+FovChanger.TextWrapped = true
+FovChanger.MouseButton1Down:connect(function()
+	workspace.CurrentCamera.FieldOfView = 120
+end)
+
+Fov120.Name = "Fov 120"
+Fov120.Parent = MiscFrame
+Fov120.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Fov120.BorderColor3 = Color3.fromRGB(255, 251, 249)
+Fov120.BorderSizePixel = 2
+Fov120.Position = UDim2.new(0.0284662545, 0, 0.206061438, 0)
+Fov120.Size = UDim2.new(0, 307, 0, 40)
+Fov120.Font = Enum.Font.SourceSans
+Fov120.Text = "Fov 120"
+Fov120.TextColor3 = Color3.fromRGB(245, 245, 245)
+Fov120.TextScaled = true
+Fov120.TextSize = 14.000
+Fov120.TextWrapped = true
+Fov120.MouseButton1Down:connect(function()
+	workspace.CurrentCamera.FieldOfView = 120
+end)
+
+Fov90.Name = "Fov 90"
+Fov90.Parent = MiscFrame
+Fov90.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Fov90.BorderColor3 = Color3.fromRGB(255, 251, 249)
+Fov90.BorderSizePixel = 2
+Fov90.Position = UDim2.new(0.0284662545, 0, 0.376709908, 0)
+Fov90.Size = UDim2.new(0, 307, 0, 40)
+Fov90.Font = Enum.Font.SourceSans
+Fov90.Text = "Fov 90"
+Fov90.TextColor3 = Color3.fromRGB(245, 245, 245)
+Fov90.TextScaled = true
+Fov90.TextSize = 14.000
+Fov90.TextWrapped = true
+Fov90.MouseButton1Down:connect(function()
+	workspace.CurrentCamera.FieldOfView = 90
+end)
+
+InfJump.Name = "Inf Jump"
+InfJump.Parent = MiscFrame
+InfJump.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+InfJump.BorderColor3 = Color3.fromRGB(255, 251, 249)
+InfJump.BorderSizePixel = 2
+InfJump.Position = UDim2.new(0.0284662545, 0, 0.550771356, 0)
+InfJump.Size = UDim2.new(0, 307, 0, 40)
+InfJump.Font = Enum.Font.SourceSans
+InfJump.Text = "Inf Jump"
+InfJump.TextColor3 = Color3.fromRGB(245, 245, 245)
+InfJump.TextScaled = true
+InfJump.TextSize = 14.000
+InfJump.TextWrapped = true
+InfJump.MouseButton1Down:connect(function()
+	local InfiniteJumpEnabled = true
+	game:GetService("UserInputService").JumpRequest:connect(function()
+		if InfiniteJumpEnabled then
+			game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+		end
+	end)
+end)
+
+VisualsFrame.Name = "VisualsFrame"
+VisualsFrame.Parent = CycleFrame
+VisualsFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+VisualsFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+VisualsFrame.Position = UDim2.new(0.336653382, 0, 0.0290322583, 0)
+VisualsFrame.Size = UDim2.new(0, 326, 0, 293)
+VisualsFrame.Visible = false
+
+Esp.Name = "Esp"
+Esp.Parent = VisualsFrame
+Esp.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Esp.BorderColor3 = Color3.fromRGB(255, 251, 249)
+Esp.BorderSizePixel = 2
+Esp.Position = UDim2.new(0.0268129688, 0, 0.032445237, 0)
+Esp.Size = UDim2.new(0, 307, 0, 40)
+Esp.Font = Enum.Font.SourceSans
+Esp.Text = "Esp"
+Esp.TextColor3 = Color3.fromRGB(245, 245, 245)
+Esp.TextScaled = true
+Esp.TextSize = 14.000
+Esp.TextWrapped = true
+
+DarkChat.Name = "Dark Chat"
+DarkChat.Parent = VisualsFrame
+DarkChat.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+DarkChat.BorderColor3 = Color3.fromRGB(255, 251, 249)
+DarkChat.BorderSizePixel = 2
+DarkChat.Position = UDim2.new(0.0268129688, 0, 0.203093708, 0)
+DarkChat.Size = UDim2.new(0, 307, 0, 40)
+DarkChat.Font = Enum.Font.SourceSans
+DarkChat.Text = "Dark Chat"
+DarkChat.TextColor3 = Color3.fromRGB(245, 245, 245)
+DarkChat.TextScaled = true
+DarkChat.TextSize = 14.000
+DarkChat.TextWrapped = true
+
+BoomBoxFrame.Name = "BoomBoxFrame"
+BoomBoxFrame.Parent = CycleFrame
+BoomBoxFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+BoomBoxFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+BoomBoxFrame.Position = UDim2.new(0.352936268, 0, 0.0289999694, 0)
+BoomBoxFrame.Size = UDim2.new(0, 318, 0, 293)
+BoomBoxFrame.Visible = false
+
+Main_2.Name = "Main"
+Main_2.Parent = BoomBoxFrame
+Main_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Main_2.BorderColor3 = Color3.fromRGB(255, 251, 249)
+Main_2.BorderSizePixel = 2
+Main_2.Position = UDim2.new(0, 0, 0.0307167228, 0)
+Main_2.Size = UDim2.new(0, 312, 0, 275)
+Main_2.Font = Enum.Font.SourceSans
+Main_2.Text = "Coming Soon."
+Main_2.TextColor3 = Color3.fromRGB(245, 245, 245)
+Main_2.TextScaled = true
+Main_2.TextSize = 14.000
+Main_2.TextWrapped = true
+
+CreditsFrame.Name = "CreditsFrame"
+CreditsFrame.Parent = CycleFrame
+CreditsFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+CreditsFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CreditsFrame.Position = UDim2.new(0.352936268, 0, 0.0290322583, 0)
+CreditsFrame.Size = UDim2.new(0, 303, 0, 293)
+CreditsFrame.Visible = false
+
+Main_3.Name = "Main"
+Main_3.Parent = CreditsFrame
+Main_3.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Main_3.BorderColor3 = Color3.fromRGB(255, 251, 249)
+Main_3.BorderSizePixel = 2
+Main_3.Position = UDim2.new(-0.00312284753, 0, 0.0358582065, 0)
+Main_3.Size = UDim2.new(0, 310, 0, 271)
+Main_3.Font = Enum.Font.SourceSans
+Main_3.Text = "Please Join our discord for giveaways and more :)"
+Main_3.TextColor3 = Color3.fromRGB(245, 245, 245)
+Main_3.TextScaled = true
+Main_3.TextSize = 14.000
+Main_3.TextWrapped = true
+
+FeFrame.Name = "FeFrame"
+FeFrame.Parent = CycleFrame
+FeFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+FeFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+FeFrame.Position = UDim2.new(0.336653382, 0, 0.0290322583, 0)
+FeFrame.Size = UDim2.new(0, 326, 0, 293)
+FeFrame.Visible = false
+
+FeHeadless.Name = "Fe Headless"
+FeHeadless.Parent = FeFrame
+FeHeadless.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+FeHeadless.BorderColor3 = Color3.fromRGB(255, 251, 249)
+FeHeadless.BorderSizePixel = 2
+FeHeadless.Position = UDim2.new(0.0237454847, 0, 0.032445237, 0)
+FeHeadless.Size = UDim2.new(0, 309, 0, 40)
+FeHeadless.Font = Enum.Font.SourceSans
+FeHeadless.Text = "Fe Headless"
+FeHeadless.TextColor3 = Color3.fromRGB(245, 245, 245)
+FeHeadless.TextScaled = true
+FeHeadless.TextSize = 14.000
+FeHeadless.TextWrapped = true
+
+FeKorblox.Name = "Fe Korblox"
+FeKorblox.Parent = FeFrame
+FeKorblox.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+FeKorblox.BorderColor3 = Color3.fromRGB(255, 251, 249)
+FeKorblox.BorderSizePixel = 2
+FeKorblox.Position = UDim2.new(0.0237454847, 0, 0.203093708, 0)
+FeKorblox.Size = UDim2.new(0, 309, 0, 40)
+FeKorblox.Font = Enum.Font.SourceSans
+FeKorblox.Text = "Fe Korblox"
+FeKorblox.TextColor3 = Color3.fromRGB(245, 245, 245)
+FeKorblox.TextScaled = true
+FeKorblox.TextSize = 14.000
+FeKorblox.TextWrapped = true
+
+FeAnimationCombos.Name = "Fe Animation Combos"
+FeAnimationCombos.Parent = FeFrame
+FeAnimationCombos.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+FeAnimationCombos.BorderColor3 = Color3.fromRGB(255, 251, 249)
+FeAnimationCombos.BorderSizePixel = 2
+FeAnimationCombos.Position = UDim2.new(0.0237454847, 0, 0.377155125, 0)
+FeAnimationCombos.Size = UDim2.new(0, 309, 0, 40)
+FeAnimationCombos.Font = Enum.Font.SourceSans
+FeAnimationCombos.Text = "Fe Animation Combos"
+FeAnimationCombos.TextColor3 = Color3.fromRGB(245, 245, 245)
+FeAnimationCombos.TextScaled = true
+FeAnimationCombos.TextSize = 14.000
+FeAnimationCombos.TextWrapped = true
+
+Aimlock.Name = "Aimlock"
+Aimlock.Parent = FeFrame
+Aimlock.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Aimlock.BorderColor3 = Color3.fromRGB(255, 251, 249)
+Aimlock.BorderSizePixel = 2
+Aimlock.Position = UDim2.new(0.0237454847, 0, 0.551216602, 0)
+Aimlock.Size = UDim2.new(0, 309, 0, 40)
+Aimlock.Font = Enum.Font.SourceSans
+Aimlock.Text = "Fe Face Changer"
+Aimlock.TextColor3 = Color3.fromRGB(245, 245, 245)
+Aimlock.TextScaled = true
+Aimlock.TextSize = 14.000
+Aimlock.TextWrapped = true
+Aimlock.MouseButton1Down:connect(function()
+	-- Gui to Lua
+	-- Version: 3.2
+
+	-- Instances:
+
+	local CycleGui = Instance.new("ScreenGui")
+	local CycleFrame = Instance.new("Frame")
+	local ScrollingFrame = Instance.new("ScrollingFrame")
+	local Main = Instance.new("TextButton")
+	local Fe = Instance.new("TextButton")
+	local Misc = Instance.new("TextButton")
+	local Visuals = Instance.new("TextButton")
+	local Credits = Instance.new("TextButton")
+	local BoomBox = Instance.new("TextButton")
+	local MiscFrame = Instance.new("Frame")
+	local FovChanger = Instance.new("TextButton")
+	local Fov120 = Instance.new("TextButton")
+	local Fov90 = Instance.new("TextButton")
+	local InfJump = Instance.new("TextButton")
+	local FakeMacro = Instance.new("TextButton")
+	local VisualsFrame = Instance.new("Frame")
+	local Esp = Instance.new("TextButton")
+	local DarkChat = Instance.new("TextButton")
+	local BoomBoxFrame = Instance.new("Frame")
+	local Main_2 = Instance.new("TextButton")
+	local CreditsFrame = Instance.new("Frame")
+	local Main_3 = Instance.new("TextButton")
+	local FeFrame = Instance.new("Frame")
+	local FeHeadless = Instance.new("TextButton")
+	local FeKorblox = Instance.new("TextButton")
+	local FeAnimationCombos = Instance.new("TextButton")
+	local Aimlock = Instance.new("TextButton")
+	local MainFrame = Instance.new("Frame")
+	local Aimlock_2 = Instance.new("TextButton")
+	local SilentAimTranparant = Instance.new("TextButton")
+	local SilentAimNormal = Instance.new("TextButton")
+	local KeyFrame = Instance.new("Frame")
+	local EnterTheKey = Instance.new("TextLabel")
+	local Password = Instance.new("TextBox")
+	local Sumbit = Instance.new("TextButton")
+	local UIGradient = Instance.new("UIGradient")
+
+	--Properties:
+
+	CycleGui.Name = "CycleGui"
+	CycleGui.Parent = game.CoreGui
+
+	CycleFrame.Name = "CycleFrame"
+	CycleFrame.Parent = CycleGui
+	CycleFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	CycleFrame.BorderColor3 = Color3.fromRGB(255, 255, 255)
+	CycleFrame.BorderSizePixel = 2
+	CycleFrame.Position = UDim2.new(0.30859372, 0, 0.211201862, 0)
+	CycleFrame.Size = UDim2.new(0, 502, 0, 310)
+	CycleFrame.Visible = false
+
+	ScrollingFrame.Parent = CycleFrame
+	ScrollingFrame.Active = true
+	ScrollingFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	ScrollingFrame.BorderColor3 = Color3.fromRGB(255, 255, 255)
+	ScrollingFrame.BorderSizePixel = 2
+	ScrollingFrame.Size = UDim2.new(0, 163, 0, 310)
+
+	Main.Name = "Main"
+	Main.Parent = CycleFrame
+	Main.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	Main.BorderColor3 = Color3.fromRGB(255, 251, 249)
+	Main.BorderSizePixel = 2
+	Main.Position = UDim2.new(0.029880479, 0, 0.0290322602, 0)
+	Main.Size = UDim2.new(0, 119, 0, 40)
+	Main.Font = Enum.Font.SourceSans
+	Main.Text = "Main"
+	Main.TextColor3 = Color3.fromRGB(245, 245, 245)
+	Main.TextScaled = true
+	Main.TextSize = 14.000
+	Main.TextWrapped = true
+
+	Fe.Name = "Fe"
+	Fe.Parent = CycleFrame
+	Fe.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	Fe.BorderColor3 = Color3.fromRGB(255, 251, 249)
+	Fe.BorderSizePixel = 2
+	Fe.Position = UDim2.new(0.029880479, 0, 0.190322578, 0)
+	Fe.Size = UDim2.new(0, 119, 0, 40)
+	Fe.Font = Enum.Font.SourceSans
+	Fe.Text = "Fe"
+	Fe.TextColor3 = Color3.fromRGB(245, 245, 245)
+	Fe.TextScaled = true
+	Fe.TextSize = 14.000
+	Fe.TextWrapped = true
+
+	Misc.Name = "Misc"
+	Misc.Parent = CycleFrame
+	Misc.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	Misc.BorderColor3 = Color3.fromRGB(255, 251, 249)
+	Misc.BorderSizePixel = 2
+	Misc.Position = UDim2.new(0.029880479, 0, 0.351612896, 0)
+	Misc.Size = UDim2.new(0, 119, 0, 40)
+	Misc.Font = Enum.Font.SourceSans
+	Misc.Text = "Misc"
+	Misc.TextColor3 = Color3.fromRGB(245, 245, 245)
+	Misc.TextScaled = true
+	Misc.TextSize = 14.000
+	Misc.TextWrapped = true
+
+	Visuals.Name = "Visuals"
+	Visuals.Parent = CycleFrame
+	Visuals.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	Visuals.BorderColor3 = Color3.fromRGB(255, 251, 249)
+	Visuals.BorderSizePixel = 2
+	Visuals.Position = UDim2.new(0.029880479, 0, 0.516129017, 0)
+	Visuals.Size = UDim2.new(0, 119, 0, 40)
+	Visuals.Font = Enum.Font.SourceSans
+	Visuals.Text = "Visuals"
+	Visuals.TextColor3 = Color3.fromRGB(245, 245, 245)
+	Visuals.TextScaled = true
+	Visuals.TextSize = 14.000
+	Visuals.TextWrapped = true
+
+	Credits.Name = "Credits"
+	Credits.Parent = CycleFrame
+	Credits.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	Credits.BorderColor3 = Color3.fromRGB(255, 251, 249)
+	Credits.BorderSizePixel = 2
+	Credits.Position = UDim2.new(0.029880479, 0, 0.845161259, 0)
+	Credits.Size = UDim2.new(0, 119, 0, 40)
+	Credits.Font = Enum.Font.SourceSans
+	Credits.Text = "Credits"
+	Credits.TextColor3 = Color3.fromRGB(245, 245, 245)
+	Credits.TextScaled = true
+	Credits.TextSize = 14.000
+	Credits.TextWrapped = true
+
+	BoomBox.Name = "BoomBox"
+	BoomBox.Parent = CycleFrame
+	BoomBox.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	BoomBox.BorderColor3 = Color3.fromRGB(255, 251, 249)
+	BoomBox.BorderSizePixel = 2
+	BoomBox.Position = UDim2.new(0.029880479, 0, 0.680645168, 0)
+	BoomBox.Size = UDim2.new(0, 119, 0, 40)
+	BoomBox.Font = Enum.Font.SourceSans
+	BoomBox.Text = "BoomBox"
+	BoomBox.TextColor3 = Color3.fromRGB(245, 245, 245)
+	BoomBox.TextScaled = true
+	BoomBox.TextSize = 14.000
+	BoomBox.TextWrapped = true
+
+	MiscFrame.Name = "MiscFrame"
+	MiscFrame.Parent = CycleFrame
+	MiscFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	MiscFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	MiscFrame.Position = UDim2.new(0.336653382, 0, 0.0290322583, 0)
+	MiscFrame.Size = UDim2.new(0, 326, 0, 293)
+
+	FovChanger.Name = "Fov Changer"
+	FovChanger.Parent = MiscFrame
+	FovChanger.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	FovChanger.BorderColor3 = Color3.fromRGB(255, 251, 249)
+	FovChanger.BorderSizePixel = 2
+	FovChanger.Position = UDim2.new(0.0284662545, 0, 0.0320000015, 0)
+	FovChanger.Size = UDim2.new(0, 307, 0, 40)
+	FovChanger.Font = Enum.Font.SourceSans
+	FovChanger.Text = "Fov Changer"
+	FovChanger.TextColor3 = Color3.fromRGB(245, 245, 245)
+	FovChanger.TextScaled = true
+	FovChanger.TextSize = 14.000
+	FovChanger.TextWrapped = true
+	FovChanger.MouseButton1Down:connect(function()
+		workspace.CurrentCamera.FieldOfView = 120
+	end)
+
+	Fov120.Name = "Fov 120"
+	Fov120.Parent = MiscFrame
+	Fov120.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	Fov120.BorderColor3 = Color3.fromRGB(255, 251, 249)
+	Fov120.BorderSizePixel = 2
+	Fov120.Position = UDim2.new(0.0284662545, 0, 0.206061438, 0)
+	Fov120.Size = UDim2.new(0, 307, 0, 40)
+	Fov120.Font = Enum.Font.SourceSans
+	Fov120.Text = "Fov 120"
+	Fov120.TextColor3 = Color3.fromRGB(245, 245, 245)
+	Fov120.TextScaled = true
+	Fov120.TextSize = 14.000
+	Fov120.TextWrapped = true
+	Fov120.MouseButton1Down:connect(function()
+		workspace.CurrentCamera.FieldOfView = 120
+	end)
+
+	Fov90.Name = "Fov 90"
+	Fov90.Parent = MiscFrame
+	Fov90.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	Fov90.BorderColor3 = Color3.fromRGB(255, 251, 249)
+	Fov90.BorderSizePixel = 2
+	Fov90.Position = UDim2.new(0.0284662545, 0, 0.376709908, 0)
+	Fov90.Size = UDim2.new(0, 307, 0, 40)
+	Fov90.Font = Enum.Font.SourceSans
+	Fov90.Text = "Fov 90"
+	Fov90.TextColor3 = Color3.fromRGB(245, 245, 245)
+	Fov90.TextScaled = true
+	Fov90.TextSize = 14.000
+	Fov90.TextWrapped = true
+	Fov90.MouseButton1Down:connect(function()
+		workspace.CurrentCamera.FieldOfView = 90
+	end)
+
+	InfJump.Name = "Inf Jump"
+	InfJump.Parent = MiscFrame
+	InfJump.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	InfJump.BorderColor3 = Color3.fromRGB(255, 251, 249)
+	InfJump.BorderSizePixel = 2
+	InfJump.Position = UDim2.new(0.0284662545, 0, 0.550771356, 0)
+	InfJump.Size = UDim2.new(0, 307, 0, 40)
+	InfJump.Font = Enum.Font.SourceSans
+	InfJump.Text = "Inf Jump"
+	InfJump.TextColor3 = Color3.fromRGB(245, 245, 245)
+	InfJump.TextScaled = true
+	InfJump.TextSize = 14.000
+	InfJump.TextWrapped = true
+	InfJump.MouseButton1Down:connect(function()
+		local InfiniteJumpEnabled = true
+		game:GetService("UserInputService").JumpRequest:connect(function()
+			if InfiniteJumpEnabled then
+				game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+			end
+		end)
+	end)
+
+	VisualsFrame.Name = "VisualsFrame"
+	VisualsFrame.Parent = CycleFrame
+	VisualsFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	VisualsFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	VisualsFrame.Position = UDim2.new(0.336653382, 0, 0.0290322583, 0)
+	VisualsFrame.Size = UDim2.new(0, 326, 0, 293)
+	VisualsFrame.Visible = false
+
+	Esp.Name = "Esp"
+	Esp.Parent = VisualsFrame
+	Esp.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	Esp.BorderColor3 = Color3.fromRGB(255, 251, 249)
+	Esp.BorderSizePixel = 2
+	Esp.Position = UDim2.new(0.0268129688, 0, 0.032445237, 0)
+	Esp.Size = UDim2.new(0, 307, 0, 40)
+	Esp.Font = Enum.Font.SourceSans
+	Esp.Text = "Esp"
+	Esp.TextColor3 = Color3.fromRGB(245, 245, 245)
+	Esp.TextScaled = true
+	Esp.TextSize = 14.000
+	Esp.TextWrapped = true
+
+	DarkChat.Name = "Dark Chat"
+	DarkChat.Parent = VisualsFrame
+	DarkChat.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	DarkChat.BorderColor3 = Color3.fromRGB(255, 251, 249)
+	DarkChat.BorderSizePixel = 2
+	DarkChat.Position = UDim2.new(0.0268129688, 0, 0.203093708, 0)
+	DarkChat.Size = UDim2.new(0, 307, 0, 40)
+	DarkChat.Font = Enum.Font.SourceSans
+	DarkChat.Text = "Dark Chat"
+	DarkChat.TextColor3 = Color3.fromRGB(245, 245, 245)
+	DarkChat.TextScaled = true
+	DarkChat.TextSize = 14.000
+	DarkChat.TextWrapped = true
+
+	BoomBoxFrame.Name = "BoomBoxFrame"
+	BoomBoxFrame.Parent = CycleFrame
+	BoomBoxFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	BoomBoxFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	BoomBoxFrame.Position = UDim2.new(0.352936268, 0, 0.0289999694, 0)
+	BoomBoxFrame.Size = UDim2.new(0, 318, 0, 293)
+	BoomBoxFrame.Visible = false
+
+	Main_2.Name = "Main"
+	Main_2.Parent = BoomBoxFrame
+	Main_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	Main_2.BorderColor3 = Color3.fromRGB(255, 251, 249)
+	Main_2.BorderSizePixel = 2
+	Main_2.Position = UDim2.new(0, 0, 0.0307167228, 0)
+	Main_2.Size = UDim2.new(0, 312, 0, 275)
+	Main_2.Font = Enum.Font.SourceSans
+	Main_2.Text = "Coming Soon."
+	Main_2.TextColor3 = Color3.fromRGB(245, 245, 245)
+	Main_2.TextScaled = true
+	Main_2.TextSize = 14.000
+	Main_2.TextWrapped = true
+
+	CreditsFrame.Name = "CreditsFrame"
+	CreditsFrame.Parent = CycleFrame
+	CreditsFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	CreditsFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	CreditsFrame.Position = UDim2.new(0.352936268, 0, 0.0290322583, 0)
+	CreditsFrame.Size = UDim2.new(0, 303, 0, 293)
+	CreditsFrame.Visible = false
+
+	Main_3.Name = "Main"
+	Main_3.Parent = CreditsFrame
+	Main_3.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	Main_3.BorderColor3 = Color3.fromRGB(255, 251, 249)
+	Main_3.BorderSizePixel = 2
+	Main_3.Position = UDim2.new(-0.00312284753, 0, 0.0358582065, 0)
+	Main_3.Size = UDim2.new(0, 310, 0, 271)
+	Main_3.Font = Enum.Font.SourceSans
+	Main_3.Text = "Please Join our discord for giveaways and more :)"
+	Main_3.TextColor3 = Color3.fromRGB(245, 245, 245)
+	Main_3.TextScaled = true
+	Main_3.TextSize = 14.000
+	Main_3.TextWrapped = true
+
+	FeFrame.Name = "FeFrame"
+	FeFrame.Parent = CycleFrame
+	FeFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	FeFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	FeFrame.Position = UDim2.new(0.336653382, 0, 0.0290322583, 0)
+	FeFrame.Size = UDim2.new(0, 326, 0, 293)
+	FeFrame.Visible = false
+
+	FeHeadless.Name = "Fe Headless"
+	FeHeadless.Parent = FeFrame
+	FeHeadless.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	FeHeadless.BorderColor3 = Color3.fromRGB(255, 251, 249)
+	FeHeadless.BorderSizePixel = 2
+	FeHeadless.Position = UDim2.new(0.0237454847, 0, 0.032445237, 0)
+	FeHeadless.Size = UDim2.new(0, 309, 0, 40)
+	FeHeadless.Font = Enum.Font.SourceSans
+	FeHeadless.Text = "Fe Headless"
+	FeHeadless.TextColor3 = Color3.fromRGB(245, 245, 245)
+	FeHeadless.TextScaled = true
+	FeHeadless.TextSize = 14.000
+	FeHeadless.TextWrapped = true
+
+	FeKorblox.Name = "Fe Korblox"
+	FeKorblox.Parent = FeFrame
+	FeKorblox.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	FeKorblox.BorderColor3 = Color3.fromRGB(255, 251, 249)
+	FeKorblox.BorderSizePixel = 2
+	FeKorblox.Position = UDim2.new(0.0237454847, 0, 0.203093708, 0)
+	FeKorblox.Size = UDim2.new(0, 309, 0, 40)
+	FeKorblox.Font = Enum.Font.SourceSans
+	FeKorblox.Text = "Fe Korblox"
+	FeKorblox.TextColor3 = Color3.fromRGB(245, 245, 245)
+	FeKorblox.TextScaled = true
+	FeKorblox.TextSize = 14.000
+	FeKorblox.TextWrapped = true
+
+	FeAnimationCombos.Name = "Fe Animation Combos"
+	FeAnimationCombos.Parent = FeFrame
+	FeAnimationCombos.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	FeAnimationCombos.BorderColor3 = Color3.fromRGB(255, 251, 249)
+	FeAnimationCombos.BorderSizePixel = 2
+	FeAnimationCombos.Position = UDim2.new(0.0237454847, 0, 0.377155125, 0)
+	FeAnimationCombos.Size = UDim2.new(0, 309, 0, 40)
+	FeAnimationCombos.Font = Enum.Font.SourceSans
+	FeAnimationCombos.Text = "Fe Animation Combos"
+	FeAnimationCombos.TextColor3 = Color3.fromRGB(245, 245, 245)
+	FeAnimationCombos.TextScaled = true
+	FeAnimationCombos.TextSize = 14.000
+	FeAnimationCombos.TextWrapped = true
+
+	Aimlock.Name = "Aimlock"
+	Aimlock.Parent = FeFrame
+	Aimlock.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	Aimlock.BorderColor3 = Color3.fromRGB(255, 251, 249)
+	Aimlock.BorderSizePixel = 2
+	Aimlock.Position = UDim2.new(0.0237454847, 0, 0.551216602, 0)
+	Aimlock.Size = UDim2.new(0, 309, 0, 40)
+	Aimlock.Font = Enum.Font.SourceSans
+	Aimlock.Text = "Fe Face Changer"
+	Aimlock.TextColor3 = Color3.fromRGB(245, 245, 245)
+	Aimlock.TextScaled = true
+	Aimlock.TextSize = 14.000
+	Aimlock.TextWrapped = true
+
+	MainFrame.Name = "MainFrame"
+	MainFrame.Parent = CycleFrame
+	MainFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	MainFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	MainFrame.Position = UDim2.new(0.336653382, 0, 0.0290322583, 0)
+	MainFrame.Size = UDim2.new(0, 326, 0, 293)
+	MainFrame.Visible = false
+
+	Aimlock_2.Name = "Aimlock"
+	Aimlock_2.Parent = MainFrame
+	Aimlock_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	Aimlock_2.BorderColor3 = Color3.fromRGB(255, 251, 249)
+	Aimlock_2.BorderSizePixel = 2
+	Aimlock_2.Position = UDim2.new(0.0237454847, 0, 0.032445237, 0)
+	Aimlock_2.Size = UDim2.new(0, 309, 0, 40)
+	Aimlock_2.Font = Enum.Font.SourceSans
+	Aimlock_2.Text = "Aimlock -Q"
+	Aimlock_2.TextColor3 = Color3.fromRGB(245, 245, 245)
+	Aimlock_2.TextScaled = true
+	Aimlock_2.TextSize = 14.000
+	Aimlock_2.TextWrapped = true
+
+	SilentAimTranparant.Name = "Silent Aim(Tranparant)"
+	SilentAimTranparant.Parent = MainFrame
+	SilentAimTranparant.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	SilentAimTranparant.BorderColor3 = Color3.fromRGB(255, 251, 249)
+	SilentAimTranparant.BorderSizePixel = 2
+	SilentAimTranparant.Position = UDim2.new(0.0237454847, 0, 0.203093708, 0)
+	SilentAimTranparant.Size = UDim2.new(0, 309, 0, 40)
+	SilentAimTranparant.Font = Enum.Font.SourceSans
+	SilentAimTranparant.Text = "Silent Aim(Transparant)"
+	SilentAimTranparant.TextColor3 = Color3.fromRGB(245, 245, 245)
+	SilentAimTranparant.TextScaled = true
+	SilentAimTranparant.TextSize = 14.000
+	SilentAimTranparant.TextWrapped = true
+
+	SilentAimNormal.Name = "Silent Aim(Normal)"
+	SilentAimNormal.Parent = MainFrame
+	SilentAimNormal.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	SilentAimNormal.BorderColor3 = Color3.fromRGB(255, 251, 249)
+	SilentAimNormal.BorderSizePixel = 2
+	SilentAimNormal.Position = UDim2.new(0.0237454847, 0, 0.377155125, 0)
+	SilentAimNormal.Size = UDim2.new(0, 309, 0, 40)
+	SilentAimNormal.Font = Enum.Font.SourceSans
+	SilentAimNormal.Text = "Silent Aim(Normal)"
+	SilentAimNormal.TextColor3 = Color3.fromRGB(245, 245, 245)
+	SilentAimNormal.TextScaled = true
+	SilentAimNormal.TextSize = 14.000
+	SilentAimNormal.TextWrapped = true
+
+	KeyFrame.Archivable = false
+	KeyFrame.Name = "KeyFrame"
+	KeyFrame.Parent = CycleGui
+	KeyFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	KeyFrame.BorderColor3 = Color3.fromRGB(255, 255, 255)
+	KeyFrame.BorderSizePixel = 2
+	KeyFrame.Position = UDim2.new(0.323437482, 0, 0.268378079, 0)
+	KeyFrame.Size = UDim2.new(0, 483, 0, 266)
+	KeyFrame.Active = true
+	KeyFrame.Draggable = true
+
+	EnterTheKey.Name = "Enter The Key!"
+	EnterTheKey.Parent = KeyFrame
+	EnterTheKey.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	EnterTheKey.BorderColor3 = Color3.fromRGB(0, 0, 0)
+	EnterTheKey.Position = UDim2.new(0.293995857, 0, 0.0225563906, 0)
+	EnterTheKey.Size = UDim2.new(0, 200, 0, 40)
+	EnterTheKey.Font = Enum.Font.SourceSans
+	EnterTheKey.Text = "Enter The Key!"
+	EnterTheKey.TextColor3 = Color3.fromRGB(255, 255, 255)
+	EnterTheKey.TextScaled = true
+	EnterTheKey.TextSize = 14.000
+	EnterTheKey.TextWrapped = true
+
+	Password.Name = "Password"
+	Password.Parent = KeyFrame
+	Password.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	Password.BorderColor3 = Color3.fromRGB(255, 255, 255)
+	Password.Position = UDim2.new(0.16770187, 0, 0.236842096, 0)
+	Password.Size = UDim2.new(0, 322, 0, 102)
+	Password.Font = Enum.Font.SourceSans
+	Password.Text = "Key Here..."
+	Password.TextColor3 = Color3.fromRGB(255, 255, 255)
+	Password.TextScaled = true
+	Password.TextSize = 14.000
+	Password.TextWrapped = true
+
+	Sumbit.Name = "Sumbit"
+	Sumbit.Parent = KeyFrame
+	Sumbit.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	Sumbit.BorderColor3 = Color3.fromRGB(255, 255, 255)
+	Sumbit.BorderSizePixel = 2
+	Sumbit.Position = UDim2.new(0.293995857, 0, 0.684210539, 0)
+	Sumbit.Size = UDim2.new(0, 200, 0, 50)
+	Sumbit.Font = Enum.Font.SourceSans
+	Sumbit.Text = "Sumbit"
+	Sumbit.TextColor3 = Color3.fromRGB(255, 255, 255)
+	Sumbit.TextScaled = true
+	Sumbit.TextSize = 14.000
+	Sumbit.TextWrapped = true
+	Sumbit.MouseButton1Down:connect(function()
+		if Password.Text == "CycleMoreLikeW" then
+			KeyFrame.Visible = false
+			CycleFrame.Visible = true 
+		end
+	end)
+
+	UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(0.33, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.63, Color3.fromRGB(205, 205, 205)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 0, 0))}
+	UIGradient.Parent = KeyFrame
+
+	-- Scripts:
+
+	local function FQXDP_fake_script() -- Main.LocalScript 
+		local script = Instance.new('LocalScript', Main)
+
+		script.Parent.MouseButton1Down:connect(function()
+			script.Parent.Parent.MainFrame.Visible = true 
+			script.Parent.Parent.BoomBoxFrame.Visible = false
+			script.Parent.Parent.CreditsFrame.Visible = false
+			script.Parent.Parent.VisualsFrame.Visible = false
+			script.Parent.Parent.FeFrame.Visible = false
+			script.Parent.Parent.MiscFrame.visible = false
+		end)
+	end
+	coroutine.wrap(FQXDP_fake_script)()
+	local function JHPUX_fake_script() -- Fe.LocalScript 
+		local script = Instance.new('LocalScript', Fe)
+
+		script.Parent.MouseButton1Down:connect(function()
+			script.Parent.Parent.MainFrame.Visible = false
+			script.Parent.Parent.BoomBoxFrame.Visible = false
+			script.Parent.Parent.CreditsFrame.Visible = false
+			script.Parent.Parent.VisualsFrame.Visible = false
+			script.Parent.Parent.FeFrame.Visible = true
+			script.Parent.Parent.MiscFrame.visible = false
+		end)
+	end
+	coroutine.wrap(JHPUX_fake_script)()
+	local function USET_fake_script() -- Misc.LocalScript 
+		local script = Instance.new('LocalScript', Misc)
+
+		script.Parent.MouseButton1Down:connect(function()
+			script.Parent.Parent.MainFrame.Visible = false
+			script.Parent.Parent.BoomBoxFrame.Visible = false
+			script.Parent.Parent.CreditsFrame.Visible = false
+			script.Parent.Parent.VisualsFrame.Visible = false
+			script.Parent.Parent.FeFrame.Visible = false
+			script.Parent.Parent.MiscFrame.visible = true
+		end)
+	end
+	coroutine.wrap(USET_fake_script)()
+	local function BUYUEI_fake_script() -- Visuals.LocalScript 
+		local script = Instance.new('LocalScript', Visuals)
+
+		script.Parent.MouseButton1Down:connect(function()
+			script.Parent.Parent.MainFrame.Visible = false
+			script.Parent.Parent.BoomBoxFrame.Visible = false
+			script.Parent.Parent.CreditsFrame.Visible = false
+			script.Parent.Parent.VisualsFrame.Visible = true 
+			script.Parent.Parent.FeFrame.Visible = false
+			script.Parent.Parent.MiscFrame.visible = false
+		end)
+	end
+	coroutine.wrap(BUYUEI_fake_script)()
+	local function PQWT_fake_script() -- Credits.LocalScript 
+		local script = Instance.new('LocalScript', Credits)
+
+		script.Parent.MouseButton1Down:connect(function()
+			script.Parent.Parent.MainFrame.Visible = false
+			script.Parent.Parent.BoomBoxFrame.Visible = false
+			script.Parent.Parent.CreditsFrame.Visible = true
+			script.Parent.Parent.VisualsFrame.Visible = false
+			script.Parent.Parent.FeFrame.Visible = false
+			script.Parent.Parent.MiscFrame.visible = false
+		end)
+	end
+	coroutine.wrap(PQWT_fake_script)()
+	local function ZJWO_fake_script() -- BoomBox.LocalScript 
+		local script = Instance.new('LocalScript', BoomBox)
+
+		script.Parent.MouseButton1Down:connect(function()
+			script.Parent.Parent.MainFrame.Visible = false
+			script.Parent.Parent.BoomBoxFrame.Visible = true
+			script.Parent.Parent.CreditsFrame.Visible = false
+			script.Parent.Parent.VisualsFrame.Visible = false
+			script.Parent.Parent.FeFrame.Visible = false
+			script.Parent.Parent.MiscFrame.visible = false
+		end)
+	end
+	coroutine.wrap(ZJWO_fake_script)()
+	local function PCEPFNY_fake_script() -- CycleFrame.DragScript 
+		local script = Instance.new('LocalScript', CycleFrame)
+
+		local UIS = game:GetService('UserInputService')
+		local frame = script.Parent
+		local dragToggle = nil
+		local dragSpeed = 0.25
+		local dragStart = nil
+		local startPos = nil
+
+		local function updateInput(input)
+			local delta = input.Position - dragStart
+			local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+				startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+			game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+		end
+
+		frame.InputBegan:Connect(function(input)
+			if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+				dragToggle = true
+				dragStart = input.Position
+				startPos = frame.Position
+				input.Changed:Connect(function()
+					if input.UserInputState == Enum.UserInputState.End then
+						dragToggle = false
+					end
+				end)
+			end
+		end)
+
+		UIS.InputChanged:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+				if dragToggle then
+					updateInput(input)
+				end
+			end
+		end)
+	end
+	coroutine.wrap(PCEPFNY_fake_script)()
+	local function VESKRDY_fake_script() -- CycleFrame.LocalScript 
+		local script = Instance.new('LocalScript', CycleFrame)
+
+		local frame = script.Parent -- path to the frame
+		local mouse = game:GetService('Players').LocalPlayer:GetMouse(); -- we need the mouse object, which also has the keyboard
+
+		mouse.KeyDown:connect(function(key) -- whenever a key is pushed down
+			key = key:lower() -- i do this in all my key events, though i don't remember why
+			if key == 'v' then -- if key pressed is h
+				frame.Visible = not frame.Visible -- flip between visible/invisible
+			end
+		end)
+	end
+	coroutine.wrap(VESKRDY_fake_script)()
+
+end)
+
+
+	
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = CycleFrame
+MainFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+MainFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MainFrame.Position = UDim2.new(0.336653382, 0, 0.0290322583, 0)
+MainFrame.Size = UDim2.new(0, 326, 0, 293)
+MainFrame.Visible = false
+
+Aimlock_2.Name = "Aimlock"
+Aimlock_2.Parent = MainFrame
+Aimlock_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Aimlock_2.BorderColor3 = Color3.fromRGB(255, 251, 249)
+Aimlock_2.BorderSizePixel = 2
+Aimlock_2.Position = UDim2.new(0.0237454847, 0, 0.032445237, 0)
+Aimlock_2.Size = UDim2.new(0, 309, 0, 40)
+Aimlock_2.Font = Enum.Font.SourceSans
+Aimlock_2.Text = "Aimlock -Q"
+Aimlock_2.TextColor3 = Color3.fromRGB(245, 245, 245)
+Aimlock_2.TextScaled = true
+Aimlock_2.TextSize = 14.000
+Aimlock_2.TextWrapped = true
+
+SilentAimTranparant.Name = "Silent Aim(Tranparant)"
+SilentAimTranparant.Parent = MainFrame
+SilentAimTranparant.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+SilentAimTranparant.BorderColor3 = Color3.fromRGB(255, 251, 249)
+SilentAimTranparant.BorderSizePixel = 2
+SilentAimTranparant.Position = UDim2.new(0.0237454847, 0, 0.203093708, 0)
+SilentAimTranparant.Size = UDim2.new(0, 309, 0, 40)
+SilentAimTranparant.Font = Enum.Font.SourceSans
+SilentAimTranparant.Text = "Silent Aim(Transparant)"
+SilentAimTranparant.TextColor3 = Color3.fromRGB(245, 245, 245)
+SilentAimTranparant.TextScaled = true
+SilentAimTranparant.TextSize = 14.000
+SilentAimTranparant.TextWrapped = true
+
+SilentAimNormal.Name = "Silent Aim(Normal)"
+SilentAimNormal.Parent = MainFrame
+SilentAimNormal.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+SilentAimNormal.BorderColor3 = Color3.fromRGB(255, 251, 249)
+SilentAimNormal.BorderSizePixel = 2
+SilentAimNormal.Position = UDim2.new(0.0237454847, 0, 0.377155125, 0)
+SilentAimNormal.Size = UDim2.new(0, 309, 0, 40)
+SilentAimNormal.Font = Enum.Font.SourceSans
+SilentAimNormal.Text = "Silent Aim(Normal)"
+SilentAimNormal.TextColor3 = Color3.fromRGB(245, 245, 245)
+SilentAimNormal.TextScaled = true
+SilentAimNormal.TextSize = 14.000
+SilentAimNormal.TextWrapped = true
+
+KeyFrame.Archivable = false
+KeyFrame.Name = "KeyFrame"
+KeyFrame.Parent = CycleGui
+KeyFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+KeyFrame.BorderColor3 = Color3.fromRGB(255, 255, 255)
+KeyFrame.BorderSizePixel = 2
+KeyFrame.Position = UDim2.new(0.323437482, 0, 0.268378079, 0)
+KeyFrame.Size = UDim2.new(0, 483, 0, 266)
+KeyFrame.Active = true
+KeyFrame.Draggable = true
+
+EnterTheKey.Name = "Enter The Key!"
+EnterTheKey.Parent = KeyFrame
+EnterTheKey.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+EnterTheKey.BorderColor3 = Color3.fromRGB(0, 0, 0)
+EnterTheKey.Position = UDim2.new(0.293995857, 0, 0.0225563906, 0)
+EnterTheKey.Size = UDim2.new(0, 200, 0, 40)
+EnterTheKey.Font = Enum.Font.SourceSans
+EnterTheKey.Text = "Enter The Key!"
+EnterTheKey.TextColor3 = Color3.fromRGB(255, 255, 255)
+EnterTheKey.TextScaled = true
+EnterTheKey.TextSize = 14.000
+EnterTheKey.TextWrapped = true
+
+Password.Name = "Password"
+Password.Parent = KeyFrame
+Password.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Password.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Password.Position = UDim2.new(0.16770187, 0, 0.236842096, 0)
+Password.Size = UDim2.new(0, 322, 0, 102)
+Password.Font = Enum.Font.SourceSans
+Password.Text = "Key Here..."
+Password.TextColor3 = Color3.fromRGB(255, 255, 255)
+Password.TextScaled = true
+Password.TextSize = 14.000
+Password.TextWrapped = true
+
+Sumbit.Name = "Sumbit"
+Sumbit.Parent = KeyFrame
+Sumbit.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Sumbit.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Sumbit.BorderSizePixel = 2
+Sumbit.Position = UDim2.new(0.293995857, 0, 0.684210539, 0)
+Sumbit.Size = UDim2.new(0, 200, 0, 50)
+Sumbit.Font = Enum.Font.SourceSans
+Sumbit.Text = "Sumbit"
+Sumbit.TextColor3 = Color3.fromRGB(255, 255, 255)
+Sumbit.TextScaled = true
+Sumbit.TextSize = 14.000
+Sumbit.TextWrapped = true
+Sumbit.MouseButton1Down:connect(function()
+	if Password.Text == "CycleMoreLikeW" then
+		KeyFrame.Visible = false
+		CycleFrame.Visible = true 
+	end
+end)
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(0.33, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.63, Color3.fromRGB(205, 205, 205)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 0, 0))}
+UIGradient.Parent = KeyFrame
+
+-- Scripts:
+
+local function FQXDP_fake_script() -- Main.LocalScript 
+	local script = Instance.new('LocalScript', Main)
+
+	script.Parent.MouseButton1Down:connect(function()
+		script.Parent.Parent.MainFrame.Visible = true 
+		script.Parent.Parent.BoomBoxFrame.Visible = false
+		script.Parent.Parent.CreditsFrame.Visible = false
+		script.Parent.Parent.VisualsFrame.Visible = false
+		script.Parent.Parent.FeFrame.Visible = false
+		script.Parent.Parent.MiscFrame.visible = false
+	end)
+end
+coroutine.wrap(FQXDP_fake_script)()
+local function JHPUX_fake_script() -- Fe.LocalScript 
+	local script = Instance.new('LocalScript', Fe)
+
+	script.Parent.MouseButton1Down:connect(function()
+		script.Parent.Parent.MainFrame.Visible = false
+		script.Parent.Parent.BoomBoxFrame.Visible = false
+		script.Parent.Parent.CreditsFrame.Visible = false
+		script.Parent.Parent.VisualsFrame.Visible = false
+		script.Parent.Parent.FeFrame.Visible = true
+		script.Parent.Parent.MiscFrame.visible = false
+	end)
+end
+coroutine.wrap(JHPUX_fake_script)()
+local function USET_fake_script() -- Misc.LocalScript 
+	local script = Instance.new('LocalScript', Misc)
+
+	script.Parent.MouseButton1Down:connect(function()
+		script.Parent.Parent.MainFrame.Visible = false
+		script.Parent.Parent.BoomBoxFrame.Visible = false
+		script.Parent.Parent.CreditsFrame.Visible = false
+		script.Parent.Parent.VisualsFrame.Visible = false
+		script.Parent.Parent.FeFrame.Visible = false
+		script.Parent.Parent.MiscFrame.visible = true
+	end)
+end
+coroutine.wrap(USET_fake_script)()
+local function BUYUEI_fake_script() -- Visuals.LocalScript 
+	local script = Instance.new('LocalScript', Visuals)
+
+	script.Parent.MouseButton1Down:connect(function()
+		script.Parent.Parent.MainFrame.Visible = false
+		script.Parent.Parent.BoomBoxFrame.Visible = false
+		script.Parent.Parent.CreditsFrame.Visible = false
+		script.Parent.Parent.VisualsFrame.Visible = true 
+		script.Parent.Parent.FeFrame.Visible = false
+		script.Parent.Parent.MiscFrame.visible = false
+	end)
+end
+coroutine.wrap(BUYUEI_fake_script)()
+local function PQWT_fake_script() -- Credits.LocalScript 
+	local script = Instance.new('LocalScript', Credits)
+
+	script.Parent.MouseButton1Down:connect(function()
+		script.Parent.Parent.MainFrame.Visible = false
+		script.Parent.Parent.BoomBoxFrame.Visible = false
+		script.Parent.Parent.CreditsFrame.Visible = true
+		script.Parent.Parent.VisualsFrame.Visible = false
+		script.Parent.Parent.FeFrame.Visible = false
+		script.Parent.Parent.MiscFrame.visible = false
+	end)
+end
+coroutine.wrap(PQWT_fake_script)()
+local function ZJWO_fake_script() -- BoomBox.LocalScript 
+	local script = Instance.new('LocalScript', BoomBox)
+
+	script.Parent.MouseButton1Down:connect(function()
+		script.Parent.Parent.MainFrame.Visible = false
+		script.Parent.Parent.BoomBoxFrame.Visible = true
+		script.Parent.Parent.CreditsFrame.Visible = false
+		script.Parent.Parent.VisualsFrame.Visible = false
+		script.Parent.Parent.FeFrame.Visible = false
+		script.Parent.Parent.MiscFrame.visible = false
+	end)
+end
+coroutine.wrap(ZJWO_fake_script)()
+local function PCEPFNY_fake_script() -- CycleFrame.DragScript 
+	local script = Instance.new('LocalScript', CycleFrame)
+
+	local UIS = game:GetService('UserInputService')
+	local frame = script.Parent
+	local dragToggle = nil
+	local dragSpeed = 0.25
+	local dragStart = nil
+	local startPos = nil
+	
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	end
+	
+	frame.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+			dragToggle = true
+			dragStart = input.Position
+			startPos = frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
+			end
+		end
+	end)
+end
+coroutine.wrap(PCEPFNY_fake_script)()
+local function VESKRDY_fake_script() -- CycleFrame.LocalScript 
+	local script = Instance.new('LocalScript', CycleFrame)
+
+	local frame = script.Parent -- path to the frame
+	local mouse = game:GetService('Players').LocalPlayer:GetMouse(); -- we need the mouse object, which also has the keyboard
+	
+	mouse.KeyDown:connect(function(key) -- whenever a key is pushed down
+		key = key:lower() -- i do this in all my key events, though i don't remember why
+		if key == 'v' then -- if key pressed is h
+			frame.Visible = not frame.Visible -- flip between visible/invisible
+		end
+	end)
+end
+coroutine.wrap(VESKRDY_fake_script)()
